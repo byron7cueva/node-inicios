@@ -1,0 +1,22 @@
+{
+  "name": "node-inicios",
+  "version": "0.0.1",
+  "description": "Primeros pasos en node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/byron7cueva/node-inicios.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Byron Cueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byron7cueva/node-inicios/issues"
+  },
+  "homepage": "https://github.com/byron7cueva/node-inicios"
+}
