@@ -63,7 +63,7 @@ server.listen(3000);
 //which node-inspector
 
 //Correr node inspector, indicandole el puerto sobre el cual queremos que corra
-// forever /usr/local/bin/node-inspector --web-port=9999
+// forever /usr/local/bin/node-inspector --web-port=9999 --debug-port=5859
 
 //Habilitando el debuggin a node
-// supervisor --debug server.js
+// supervisor --debug=5859 server.js

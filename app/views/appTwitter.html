@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+{% endblock %}
+
+{% block content %}
+
+	<h1>Bienvenido {{ user.username }}</h1>
+	<a href="/log-out">Log Out</a>
+	
+	<div>
+		<form method="POST" action="/app/create-post">
+			<textarea name="content"></textarea>
+			<button>Post</button>
+		</form>
+	</div>
+
+	<div id="post">
+		{% for post in posts %}
+			<p>{{post.user.username}} : {{post.content}}</p>
+		{% endfor %}
+	</div>
+{% endblock %}
